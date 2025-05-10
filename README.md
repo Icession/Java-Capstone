@@ -1,4 +1,4 @@
-# 🎯 Number Guesser – Capstone Project
+# Number Guesser – Capstone Project
 
 **Number Guesser**, a Java-based game that challenges the player to guess a randomly generated number between 1 and 100. This project was designed with full Object-Oriented Programming principles in mind, featuring a neat and responsive graphical user interface, and a modular design that can easily scale into other types of guessing games.
 
