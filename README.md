@@ -78,7 +78,7 @@ public class NumberGame extends Game{
 
 
 ### 🔸 Inheritance
-`NumberGame` inherits from the `Game` abstract class and overrides its methods to implement the logic for a specific game. This reuse of functionality demonstrates inheritance and makes the design more scalable and maintainable.
+`NumberGame` inherits from the `Game` abstract class and overrides its methods to implement the logic for a specific game. This reuse of functionality demonstrates inheritance and makes the design more maintainable.
 
 public class NumberGame extends Game{
 
@@ -101,14 +101,14 @@ Through method overriding, polymorphism is achieved. The `Game` reference can po
 
 ## 🔹 Exception Handling
 
-Robust exception handling is implemented using `try-catch` blocks. The program safely handles user input errors, such as entering non-numeric values, by catching `NumberFormatException` and displaying a user-friendly message via `JOptionPane`. This ensures the application remains stable and user-centric, even with unexpected inputs. The code could easily be extended to include custom exceptions for advanced error tracking.
+An exception handling is implemented using `try-catch` blocks. The program safely handles user input errors, such as entering non-numeric values, by catching `NumberFormatException` and displaying a user-friendly message from `JOptionPane`. This ensures the application remains stable and user friendly, even with unexpected inputs. The code could easily be extended to include custom exceptions for error tracking.
 
 ![image](https://github.com/user-attachments/assets/0d0b4a8e-a1b6-422a-850d-ae0184305ea7)
 
 
 ## 🔹 File Handling
 
-A dedicated class, `Score`, manages file operations using `FileWriter` and `BufferedWriter`. After each game, the number of attempts is written to a file named `Record.txt`. This simple yet effective file handling ensures persistence of game data and demonstrates how Java programs can interact with external files for logging or data analysis purposes.
+The class `Score`, manages file operations using `FileWriter` and `BufferedWriter`. After each game, the number of attempts is written to a file named `Record.txt` and it will display in the terminal as well. This simple file handling ensures persistence of game data and demonstrates how this program can interact with external files for logging or data analysis purposes.
 
 public class Score {
 
@@ -123,7 +123,7 @@ public class Score {
 
 ## 🔹 Graphical User Interface
 
-The GUI is built using Java Swing components such as `JFrame`, `JLabel`, `JButton`, and `JTextField`. The layout is intuitive, user-friendly, and responsive. Input fields are clearly labeled, and game feedback is given immediately through a combination of labels and pop-up dialogs. The interface design ensures a seamless experience that aligns with the functionality and theme of the game.
+The GUI is built using Java Swing components such as `JFrame`, `JLabel`, `JButton`, and `JTextField`. The layout is user-friendly, and responsive. Input fields are clearly labeled, and game feedback is given immediately through a combination of labels and pop-up dialogs. The interface design ensures a cleaar experience that aligns with the functionality and theme of the game.
 
 ![image](https://github.com/user-attachments/assets/d60223d0-ba8e-4b82-90da-f3f55c53eabd)
 
