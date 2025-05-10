@@ -4,13 +4,13 @@
 
 
 
-## 🔹 Classes and Objects
+## Classes and Objects
 
 This project is structured around multiple classes, each with a single properties. The `NumberGuesser` class handles the GUI using `JFrame`, while the `NumberGame` class handles the game logic. `NumberGame` inherits from an abstract class `Game`, which defines common methods. A separate `Score` class manages file operations. Each class utilizes fields and methods appropriately to encapsulate and operate on the necessary data, promoting a clean and readable codebase.
 
 
 
-## 🔹 Class Diagram
+## Class Diagram
 
 The class diagram provides a visual breakdown of the system architecture. It includes the `Game` abstract class, its concrete subclass `NumberGame`, the GUI class `NumberGuesser`, and the `Score` class responsible for file handling. Each class shows its fields and methods to represent the structure and relationships accurately. This diagram ensures that the implementation aligns with object-oriented principles and offers a clear path for future extensions or modifications.
 
@@ -18,9 +18,9 @@ The class diagram provides a visual breakdown of the system architecture. It inc
 
 
 
-## 🔹 Four OOP Principles
+## Four OOP Principles
 
-### 🔸 Abstraction
+### Abstraction
 The abstract class `Game` defines general behavior like `resetGame()` and `getAttempts()`, hiding the implementation details from users. This allows `NumberGame` to extend and implement these methods, focusing on game-specific logic while abstracting common behavior.
 
 `abstract class Game {
@@ -29,7 +29,7 @@ The abstract class `Game` defines general behavior like `resetGame()` and `getAt
     public abstract int getAttempts();
 }`
 
-### 🔸 Encapsulation
+### Encapsulation
 Fields such as `targetNumber`, `attempts`, `min` etc.  are private, and access to them is controlled via public methods like `checkGuess()`. This protects the internal state of the objects and prevents unintended interference from outside classes. This ensures the users cannot get a hold of the code to cheat on the game.
 
 public class NumberGame extends Game{
@@ -77,7 +77,7 @@ public class NumberGame extends Game{
 }
 
 
-### 🔸 Inheritance
+### Inheritance
 `NumberGame` inherits from the `Game` abstract class and overrides its methods to implement the logic for a specific game. This reuse of functionality demonstrates inheritance and makes the design more maintainable.
 
 public class NumberGame extends Game{
@@ -85,7 +85,7 @@ public class NumberGame extends Game{
 
 }
 
-### 🔸 Polymorphism
+### Polymorphism
 Through method overriding, polymorphism is achieved. The `Game` reference can point to any of its subclasses (like `NumberGame`), and the overridden methods will execute according to the actual object type at runtime, enabling flexible and dynamic behavior.
 
 @Override
@@ -106,7 +106,7 @@ An exception handling is implemented using `try-catch` blocks. The program safel
 ![image](https://github.com/user-attachments/assets/0d0b4a8e-a1b6-422a-850d-ae0184305ea7)
 
 
-## 🔹 File Handling
+## File Handling
 
 The class `Score`, manages file operations using `FileWriter` and `BufferedWriter`. After each game, the number of attempts is written to a file named `Record.txt` and it will display in the terminal as well. This simple file handling ensures persistence of game data and demonstrates how this program can interact with external files for logging or data analysis purposes.
 
@@ -121,7 +121,7 @@ public class Score {
     }
 }
 
-## 🔹 Graphical User Interface
+## Graphical User Interface
 
 The GUI is built using Java Swing components such as `JFrame`, `JLabel`, `JButton`, and `JTextField`. The layout is user-friendly, and responsive. Input fields are clearly labeled, and game feedback is given immediately through a combination of labels and pop-up dialogs. The interface design ensures a cleaar experience that aligns with the functionality and theme of the game.
 
